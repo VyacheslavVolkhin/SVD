@@ -1,0 +1,90 @@
+:root {
+	--clr-base: #000;
+	--clr-att: #cc9c4b;
+
+	--min: 320px;
+	--max: 1600px;
+
+	font-size: 10px;
+}
+.sl-wrap~.sl-wrap {
+	display: none;
+}
+.elm-hidden {
+	display: none;
+}
+.ft {font-family: 'Cormorant Unicase', serif;}
+.fs {font-family: 'La Belle Aurore', cursive;}
+.fm {font-family: 'Montserrat', sans-serif;}
+/* ----------------------------------- *\
+			main styles
+\* ----------------------------------- */
+body {
+	color: var(--clr-base, #000);
+	background: #f8f7f4;
+    font-size: 16px;
+    line-height: 1.2;
+}
+p, ul, ol {
+	position: relative;
+    margin-bottom: 1em;
+	img {
+		max-width: 100%;
+	}
+	&:last-child {
+		margin-bottom: 0 !important;
+	}
+}
+
+li {
+	position: relative;
+}
+a {
+	text-decoration: none;
+	color: var(--clr-att, #C9984A);
+	&:hover {
+		text-decoration: none;
+		color: var(--clr-att, #C9984A);
+	}
+}
+a.link-main, .link-main {
+	text-decoration: none;
+	border-bottom: 1px solid;
+	&:hover {
+		border-bottom: none;
+	}
+}
+.main-page-title {
+    display: block;
+    position: relative;
+    color: var(--clr-att);
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 102/110;
+    margin: 0;
+    .ft;
+}
+.page-subtitle {
+    display: block;
+    font-size: 14px;
+    line-height: 17px;
+    color: var(--clr-att);
+    text-transform: uppercase;
+    font-weight: 400;
+    margin: 0 0 1em 0;
+    .fm;
+}
+h1, .h1-title,
+h2, .h2-title,
+h3, .h3-title,
+h4, .h4-title,
+h5, .h5-title,
+h6, .h6-title {
+
+}
+@media (max-width: 639px) {
+    .page-subtitle {
+        font-size: 12px;
+        line-height: 15/12;
+    }
+}
